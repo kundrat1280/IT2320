@@ -1,0 +1,58 @@
+header, main, footer, figure, figcaption { display: block; }
+body { background-color: #0099ff;
+	  font-family: 'Lucida Console', Monaco, monospace;
+	  background-image: url(background.jpg);
+	  background-repeat: repeat;
+}
+#wrapper { width: 80%;
+           margin-left: auto;
+		   margin-right: auto;
+		   background-color: #000000;
+		   min-width: 960px;
+		   max-width: 2048px;
+		   box-shadow: 5px 5px 5px #000000;
+}
+header { background-color: #000000;
+       margin-left: auto;
+	   margin-right: auto;	   
+       color: #B8860B;
+	   height: 90px;
+	   padding-top: 30px;
+	   font-size: 300%;
+	   font-weight: bold;
+	   text-shadow: 1px 1px 1px #000000;
+	   text-align: center;
+}
+main { padding: 1px 20px 20px 30px; 
+      display: block;
+	  background-color: #000000;
+	  color: #B8860B;
+	  border: 1px solid white;
+}
+h2 { color: #FFFFFF;
+	font-family: 'Lucida Console', Monaco, monospace;
+	text-align: center;
+}
+figure { text-align: center; }
+figcaption { font-size: 90%;
+			font-style: italic;
+			text-align: center;
+}
+footer { font-size: 85%;
+	   font-family: Impact, Charcoal, sans-serif;
+	   text-align: center;
+	   color: #B8860B;
+	   text-shadow: 1px 1px 1px #000000;
+	   background-color: #000000;
+	   padding: 20px;
+	   clear: both;
+}
+#audio { text-align: center; }
+#audio a { text-decoration: none;
+		 color: #B8860B;
+}
+#clock {
+    font-family: 'Lucida Console', Monaco, monospace;
+    text-align: center;
+    color: white;
+}
