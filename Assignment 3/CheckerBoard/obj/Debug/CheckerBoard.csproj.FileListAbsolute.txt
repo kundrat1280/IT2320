@@ -30,3 +30,19 @@ E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 5
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 5 - Introduction to JQuery\CheckerBoard\CheckerBoard\obj\Debug\CheckerBoard.csprojResolveAssemblyReference.cache
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 5 - Introduction to JQuery\CheckerBoard\CheckerBoard\obj\Debug\CheckerBoard.dll
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 5 - Introduction to JQuery\CheckerBoard\CheckerBoard\obj\Debug\CheckerBoard.pdb
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\CheckerBoard.dll.config
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\CheckerBoard.dll
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\CheckerBoard.pdb
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\Microsoft.Web.Infrastructure.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Net.Http.Formatting.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.Helpers.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.Http.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.Http.WebHost.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.Mvc.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.Razor.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.WebPages.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.WebPages.Deployment.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\bin\System.Web.WebPages.Razor.xml
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\obj\Debug\CheckerBoard.csprojResolveAssemblyReference.cache
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\obj\Debug\CheckerBoard.dll
+F:\IT2320\IT2320\Assignment 3\CheckerBoard\obj\Debug\CheckerBoard.pdb
