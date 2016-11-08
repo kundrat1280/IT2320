@@ -1,0 +1,62 @@
+﻿@model FinalProject.Models.HomeViewModel
+
+<html>
+
+    <head>
+        <link href="~/Styles/Home.css" rel="stylesheet" />
+        <title>Final Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui.min.js"></script>
+        <script src="~/Scripts/Home.js"></script>
+        
+        <div class="home">
+
+            <div id="header">Welcome to Cuyahoga Community College Student Services Online</div>
+            <br />
+            <div id="header-para">Cuyahoga Community College recognizes students' rights to access personal and academic records
+            in accordance with the Family Educational Rights and Privacy Act of 1974 (FERPA) as amended by
+            Public Law 93-568.</div>
+
+        </div>
+        <br />
+        <div class="content">
+
+            <table>
+                <tr>
+                    <td class="tdleft">Already have an account with us?
+                    Returning users may log in by entering
+                    their site username and password.
+                    </td>
+                    <td class="tdright">Username &nbsp;<input type="text" name="username" id="username" size="20"><br />
+                    Password &nbsp;<input type="text" name="password" id="password" size="20"><br />
+                    <input type="button" class="button" value="Log In"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdleft">New users, please create a
+                    new account by providing us
+                    with some basic information.
+                    </td>
+                    <td class="tdright">Username &nbsp;<input type="text" name="crusername" id="username" size="20"><br />
+                    Password &nbsp;<input type="text" name="crpassword" id="password" size="20"><br />
+                    E-Mail Address &nbsp;<input type="text" name="email" id="email" size="20"><br />
+                    Repeat E-Mail Address &nbsp;<input type="text" name="repemail" id="repemail" size="20"><br />
+                    <input type="button" class="button" value="Create Account"></td>
+                </tr>
+            </table>
+
+        </div>
+        <br />
+        <div class="footer">Cuyahoga Community College <br />700 Carnegie Avenue, Cleveland, Ohio 44115
+        </div>
+    </body>
+
+</html>
