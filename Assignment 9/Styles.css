@@ -1,0 +1,63 @@
+@font-face {
+    font-family: marioFont;
+    src: url(SuperMarioBros..ttf);
+}
+div {
+    font-family: marioFont;
+	color: yellow;
+	font-size: 48pt;
+	text-align: center;
+}
+body {
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: 100% 100%;
+}
+@keyframes mario {
+    0%   {left:50px; top:715px;}
+    50%  {left:180px; top:450px;}
+    100% {left:300px; top:715px;}
+}
+@keyframes koopa {
+	0%   {left:300px;}
+	50%  {left: 970px;}
+	100% {left:300px;}
+}
+.mario {
+	position: absolute;
+    bottom: 135px;
+	left: 50px;
+	animation-name: mario;
+	animation-duration: 2s;
+}
+.koopa {
+	position: absolute;
+    bottom: 135px;
+	left: 300px;
+	animation-name: koopa;
+	animation-duration: 3s;
+	animation-delay: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.pipe {
+	position: absolute;
+    bottom: 135px;
+	left: 1000px;
+}
+.mushroom {
+	position: absolute;
+	bottom: 135px;
+	right: 50px;
+}
+.mushroom img {
+	position: absolute;
+	bottom: 5px;
+	left: -250px;
+	transition: opacity 1s ease-in-out;
+}
+.mushroom img.luigimario:hover {
+	opacity:0;
+}
