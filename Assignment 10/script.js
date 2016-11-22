@@ -106,7 +106,7 @@ function myMove(e)
 
 function myDown(e)
 {
-	for (var i=0; i<3; i++)
+	for (var i=0; i<5; i++)
 	{
 		if ((getMouseX(e) > getXCoordinate(i) && getMouseX(e) < getXCoordinate(i) + w))
 		{
