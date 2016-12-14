@@ -20,7 +20,7 @@
     border: 1px solid black;
     padding: 20px;
 }
-.button {
+.logbutton {
     width: 150px;
     padding: 5px;
     border-radius: 15px;
@@ -28,7 +28,19 @@
     background-color: powderblue;
     box-shadow: 5px 5px 5px #000000;
 }
-.button:hover {
+.crbutton {
+    width: 150px;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: hidden;
+    background-color: powderblue;
+    box-shadow: 5px 5px 5px #000000;
+}
+.logbutton:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+.crbutton:hover {
     background-color: dodgerblue;
     color: white;
 }
