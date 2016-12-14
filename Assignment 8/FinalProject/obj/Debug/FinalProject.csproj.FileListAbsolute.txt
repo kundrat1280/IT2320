@@ -20,3 +20,10 @@ E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 1
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 10 - Final Project\FinalProject\bin\Microsoft.Web.Infrastructure.dll
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 10 - Final Project\FinalProject\obj\Debug\FinalProject.dll
 E:\Backup\10192014\Documents\College Classes\IT2320\Master\IT-2320-master\Week 10 - Final Project\FinalProject\obj\Debug\FinalProject.pdb
+F:\IT2320\IT2320\Assignment 8\FinalProject\bin\FinalProject.dll.config
+F:\IT2320\IT2320\Assignment 8\FinalProject\bin\FinalProject.dll
+F:\IT2320\IT2320\Assignment 8\FinalProject\bin\FinalProject.pdb
+F:\IT2320\IT2320\Assignment 8\FinalProject\bin\Microsoft.Web.Infrastructure.dll
+F:\IT2320\IT2320\Assignment 8\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+F:\IT2320\IT2320\Assignment 8\FinalProject\obj\Debug\FinalProject.dll
+F:\IT2320\IT2320\Assignment 8\FinalProject\obj\Debug\FinalProject.pdb
