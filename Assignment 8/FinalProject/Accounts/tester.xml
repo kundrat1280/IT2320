@@ -2,5 +2,6 @@
 <account>
   <username>tester</username>
   <password>password</password>
-  <emailadd>test@test.com</emailadd>
+  <emailadd>test1@test.com</emailadd>
+  <gpa>3.9</gpa>
 </account>

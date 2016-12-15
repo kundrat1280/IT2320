@@ -10,7 +10,7 @@
     var email = $(".email");
     var repemail = $(".repemail");
     var elemname = $(".elemname");
-    var elempassword = $(".elempassword");
+    var elemval = $(".elemval");
     var infousername = $(".infousername");
     var infoemail = $(".infoemail");
     var infogpa = $(".infogpa");
@@ -24,24 +24,37 @@
             },
             success: function (stringResponse) {
                 response = JSON.parse(stringResponse);
-                $(".content").css("display", "none");
-                $(".output").css("display", "inline");
-                
+                if (response.Message == "Success") {
+                    $(".content").css("display", "none");
+                    $(".output").css("display", "inline");
+                    $.ajax({
+                        url: "Home/GetAccountInformation",
+                        data: {
+                            "Username": username.val()
+                        },
+                        success: function (stringResponse) {
+                            response = JSON.parse(stringResponse);
+                            payload = response.Payload;
+                            user = JSON.parse(payload);
+                            infousername.val(user.account.username);
+                            infoemail.val(user.account.emailadd);
+                            infogpa.val(user.account.gpa);
+                        }
+                    })
+                }
+                else {
+                    if (response.Username == "Invalid") {
+                        $(".logerror").html("Must be an existing account username");
+                    }
+                    else if (response.Password == "Wrong") {
+                        $(".logerror").html("Wrong password for existing account");
+                    }
+                    
+                }
             }
         });
-        $.ajax({
-            url: "Home/GetAccountInformation",
-            data: {
-                "Username": username.val()
-            },
-            success: function (stringResponse) {
-                response = JSON.parse(stringResponse);
-                payload = response.Payload;
-                user = JSON.parse(payload);
-                infousername.val(user.account.username);
-                infoemail.val(user.account.emailadd);
-            }
-        })
+        
+    
     });
 
     crbutton.click(function () {
@@ -72,5 +85,40 @@
                 alert(response.Message);
             }
         })
-    })
+    });
+
+    $(".upgpabutton").click(function () {
+        $.ajax({
+            url: "Home/AddOrUpdateElement",
+            data: {
+                "Username": infousername.val(),
+                "ElementName": "gpa",
+                "ElementValue": infogpa.val()
+            },
+            success: function (stringResponse) {
+                response = JSON.parse(stringResponse);
+            }
+        })
+    });
+
+    $(".upbutton").click(function () {
+        $.ajax({
+            url: "Home/AddOrUpdateElement",
+            data: {
+                "Username": infousername.val(),
+                "ElementName": elemname.val(),
+                "ElementValue": elemval.val()
+            },
+            success: function (stringResponse) {
+                response = JSON.parse(stringResponse);
+                payload = response.Payload;
+                user = JSON.parse(payload);
+                infousername.val(user.account.username);
+                infoemail.val(user.account.emailadd);
+                infogpa.val(user.account.gpa);
+                elemname.val('');
+                elemval.val('');
+            }
+        })
+    });
 });
