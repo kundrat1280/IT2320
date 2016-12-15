@@ -27,7 +27,7 @@
     
     display: none;
 }
-.logerror {
+.logerror, .createrr, .elemerror {
     font-family: Calibri;
     color: red;
 }

@@ -68,6 +68,26 @@
             },
             success: function (stringResponse) {
                 response = JSON.parse(stringResponse);
+                if (response.Message == "Error") {
+                    if (response.Username == "Invalid") {
+                        $(".createrr").html("Must be at least 6 characters");
+                    }
+                    else if (response.Username == "Exists") {
+                        $(".createrr").html("Username is already taken");
+                    }
+                    else if (response.Password == "Invalid") {
+                        $(".createrr").html("Username is already taken");
+                    }
+                    else if (response.EmailAdd == "Invalid") {
+                        $(".createrr").html("Must have a value and contain @");
+                    }
+                    else if (response.EmailCon == "Invalid") {
+                        $(".createrr").html("Must have a value");
+                    }
+                    else if (response.EmailCon == "Mismatch") {
+                        $(".createrr").html("Must match EmailAdd");
+                    }
+                }
             }
         });
     });
@@ -111,13 +131,21 @@
             },
             success: function (stringResponse) {
                 response = JSON.parse(stringResponse);
-                payload = response.Payload;
-                user = JSON.parse(payload);
-                infousername.val(user.account.username);
-                infoemail.val(user.account.emailadd);
-                infogpa.val(user.account.gpa);
-                elemname.val('');
-                elemval.val('');
+                if (response.Message == "Success") {
+                    payload = response.Payload;
+                    user = JSON.parse(payload);
+                    infousername.val(user.account.username);
+                    infoemail.val(user.account.emailadd);
+                    infogpa.val(user.account.gpa);
+                    elemname.val('');
+                    elemval.val('');
+                }
+                else if (response.Error == "Cannot Have Spaces In Element Name") {
+                    $(".elemerror").html("Cannot Have Spaces In Element Name");
+                }
+                else if (response.Error == "Cannot Change Username") {
+                    $(".elemerror").html("Cannot Change Username");
+                }
             }
         })
     });
